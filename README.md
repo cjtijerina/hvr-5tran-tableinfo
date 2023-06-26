@@ -5,10 +5,10 @@ Creator: ctijerina
 Creation time: 2018 changes thru 2022
 
 #### B: Word Legend: 
-CDC = change data capture - capturing inserts, updates and deletes
-Client = the user of this script - can be you too.
-Channel = this houses your pipe-pipeline, it's like a project folder and your pipe lines will be inside your ChanneN
-          every channel will produce 1 hvr.out file and this is the key file this script will run against.
+1. CDC = change data capture - capturing inserts, updates and deletes
+2. Client = the user of this script - can be you too.
+3. Channel = this houses your pipe-pipeline, it's like a project folder and your pipe lines will be inside your ChanneN
+             every channel will produce 1 hvr.out file and this is the key file this script will run against.
 
 #### C: This script runs on: Linux, Mac Terminal, Windows(but must use WSL bash - it's a linux sub system on windows)
 
