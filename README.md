@@ -1,4 +1,4 @@
-#### hvr-5tran-tableinfo
+#### hvr-5tran-tableinfo - Partition your HVR pipe-line by table activity
 
 ##### A:  Who and When:
 Creator: ctijerina 
