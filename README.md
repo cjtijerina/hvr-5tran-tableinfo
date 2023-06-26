@@ -1,22 +1,22 @@
-# hvr-5tran-tableinfo
+#### hvr-5tran-tableinfo
 
 ##### A:  Who and When:
 Creator: ctijerina 
 Creation time: 2018 changes thru 2022
 
-## B: Word Legend: 
+#### B: Word Legend: 
 CDC = change data capture - capturing inserts, updates and deletes
 Client = the user of this script - can be you too.
 Channel = this houses your pipe-pipeline, it's like a project folder and your pipe lines will be inside your ChanneN
           every channel will produce 1 hvr.out file and this is the key file this script will run against.
 
-## C: This script runs on: Linux, Mac Terminal, Windows(but must use WSL bash - it's a linux sub system on windows)
+#### C: This script runs on: Linux, Mac Terminal, Windows(but must use WSL bash - it's a linux sub system on windows)
 
-## D: The goal:
+#### D: The goal:
 1. Is to parse the hvr.out file for all CAPTURE activity for a given run time.
 2. If no capture key word then integrate processed rows will be calculated
 
-## E: Steps to prep for this script:
+#### E: Steps to prep for this script:
 NOTE: you don't have to have hvr/5tran installed to run this script, you can put your
       hvr.out file on any linux os along with this file and run this file.
 1. The client will be asked to setup a Capture and allow it to run for 24+ hours (2 days)
@@ -24,7 +24,7 @@ NOTE: you don't have to have hvr/5tran installed to run this script, you can put
    If you backup hvr.log and let's say you have 10 logs, Concat all 10 files into 1 big file,
    then use this 1 big file with this script. 
 
-## F: Where to put this script and how to run
+#### F: Where to put this script and how to run
 1. Best place is the hvr_config/log/yourHubName
 2. chmod +x hvrBusyTables_v13.2.bash
 3. ./hvrBusyhvrBusyTables_v13.2.bash
