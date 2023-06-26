@@ -12,15 +12,16 @@
 ## The client will send HVR the hvr.out file and run this script against the hvr.out file
 #### A. Where to put this script and how to run
 # 1. Best place is the hvr_config/log/yourHubName
-# 2. chmod +x the file
-# 3. ./hvrBusyTables_v##.bash - current is v13.2
-#### B. End Results
+# 2. chmod +x hvrBusyTables_v13.2.bash
+# 3. ./hvrBusyhvrBusyTables_v13.2.bash
+#### B. End Results - output to console and to text files
 # 1. Total # of Application Tables in your CDC Replication/PipeLine- 
 # 2. Total # of Changed Rows - changed by Insert, Update or Delete - broTip: this is CDC
 # 3. A list of all tables with the total amount of changed rows
 # 4. Post programatically analyzing: Small - Medium - Busy groups based on calculation  sum/tableTotalchanged*100
 #### C.BENEFITS - what to do with the output from this script
-# 1. Determine how to break up parallize your downstream pipe lines for better thru put
+# 1. Determine how to parallelize your downstream pipe lines for better thru put, get to near real-time deivery of your data
+#    a. if you have a SLA of 1 min, and your data is breaking the SLA by 5 minutes, this tool will help you achieve near-real time deliver.
 # 2. Use this data to proavtively determine capacity and when will it be time to add more capacity
 #    a. Every Insert means a new customer, which means more storage and os/db compute will be utilized
 ######################################################################################
