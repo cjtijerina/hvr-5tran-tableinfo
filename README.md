@@ -7,12 +7,15 @@ Creation time: 2018 changes thru 2022
 #### B: Word Legend: 
 1. CDC = change data capture - capturing inserts, updates and deletes
 2. Client = the user of this script - can be you too.
-3. Channel = this houses your pipeline, it's like a project folder and your pipe lines will be inside your Channel
+3. Channel = this houses your pipe-line, it's like a project folder and your pipe-lines will be inside your Channel,
              every channel will produce 1 hvr.out file and this is the key file this script will run against.
-             If you have many pipilines in 1 chanel, not to worry, this script will account for each pipeline, remember
+             If you have many pipi-lines in 1 chanel, not to worry, this script will account for each pipe-line, remember
              all hvr channels will have 1 hvr.log file.             
 
-#### C: This script runs on: Linux, Mac Terminal, Windows(but must use WSL bash - it's a linux sub system on windows)
+#### C: This script runs on:
+1. Linux
+2. Mac Terminal
+3. Windows(but must use WSL bash - it's a linux sub system on windows)
 
 #### D: The goal:
 1. Is to parse the hvr.out file for all CAPTURE activity for a given run time.
