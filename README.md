@@ -41,8 +41,8 @@ NOTE: you don't have to have hvr/5tran installed to run this script, you can put
 4. Post programatically analyzing: Small - Medium - Busy groups based on calculation  sum/tableTotalchanged*100
 
 #### H. BENEFITS - what to do with the output from this script
-1. Determine how to parallelize your downstream pipe lines for better thru put, get to near real-time deivery of your data
-    a. if you have a SLA of 1 min, and your data is breaking the SLA by 5 minutes, this tool will help you achieve near-real time deliver.
+1. Determine how to parallelize your downstream pipelines/hvr channels for better thru put, get near real-time deivery of your data
+a. if you have a SLA of 1 min, and your data is breaking the SLA by 5 minutes, this tool will help you achieve near-real time delivery.
 2. Use this data to proavtively determine capacity and when will it be time to add more capacity
-    a. Every Insert means a new customer, which means more storage and os/db compute will be utilized
+a. Every Insert means a new customer, which means more storage and os/db compute will be utilized
 #####
