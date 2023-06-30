@@ -10,7 +10,11 @@ Creation time: 2018 changes thru 2022
 3. Channel = this houses your pipe-line, it's like a project folder and your pipe-lines will be inside your Channel,
              every channel will produce 1 hvr.out file and this is the key file this script will run against.
              If you have many pipi-lines in 1 chanel, not to worry, this script will account for each pipe-line, remember
-             all hvr channels will have 1 hvr.log file.             
+             all hvr channels will have 1 hvr.log file.
+4. Compute = Total cost of CPU, Memory, IO even disk space.
+NOTE: Compute can increase by an os job, db job, sql, a 3rd party cdc tool.
+This script is not an OS/DB performance analyzing tool, it's desinged to help
+HVR users better understand their application tables for better thru put.         
 
 #### C: This script runs on:
 1. Linux
@@ -48,6 +52,6 @@ NOTE: you don't have to have hvr/5tran installed to run this script, you can put
 #### H. BENEFITS - what to do with the output from this script
 1. Determine how to parallelize your downstream pipelines/hvr channels for better thru put, get near real-time deivery of your data
 ##a. if you have a SLA of 1 min, and your data is breaking the SLA by 5 minutes, this tool will help you achieve near-real time delivery.
-2. Use this data to proavtively determine capacity and when will it be time to add more capacity
+2. Use this data to proavtively determine capacity sizing.
 ##a. Every Insert means a new customer, which means more storage and os/db compute will be utilized
 #####
