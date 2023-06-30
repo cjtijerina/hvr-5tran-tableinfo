@@ -33,16 +33,21 @@ NOTE: you don't have to have hvr/5tran installed to run this script, you can put
 1. Best place is the hvr_config/log/yourHubName
 2. chmod +x hvrBusyTables_v13.2.bash
 3. ./hvrBusyhvrBusyTables_v13.2.bash
+----
+4. download hvrBusyTables_v13.2.bash to server1 in /home/myName
+5. Copy your current hvr.out to server1 in /home/myName
+6. chmod +x hvrBusyTables_v13.2.bash
+7. run the script:  ./hvrBusyTables_v13.2.bash
 
 #### G. End Results - output to console and to text files
-1. Total # of Application Tables in your CDC Replication/PipeLine- 
+1. Total # of Application Tables in your CDC Replication Pipelines/Channels
 2. Total # of Changed Rows - changed by Insert, Update or Delete - broTip: this is CDC
 3. A list of all tables with the total amount of changed rows
 4. Post programatically analyzing: Small - Medium - Busy groups based on calculation  sum/tableTotalchanged*100
 
 #### H. BENEFITS - what to do with the output from this script
 1. Determine how to parallelize your downstream pipelines/hvr channels for better thru put, get near real-time deivery of your data
-a. if you have a SLA of 1 min, and your data is breaking the SLA by 5 minutes, this tool will help you achieve near-real time delivery.
+##a. if you have a SLA of 1 min, and your data is breaking the SLA by 5 minutes, this tool will help you achieve near-real time delivery.
 2. Use this data to proavtively determine capacity and when will it be time to add more capacity
-a. Every Insert means a new customer, which means more storage and os/db compute will be utilized
+##a. Every Insert means a new customer, which means more storage and os/db compute will be utilized
 #####
